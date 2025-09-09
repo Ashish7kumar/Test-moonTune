@@ -12,7 +12,7 @@ export const env = createEnv({
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
-    INNGEST_EVENT_KEY: z.string().min(1),
+    INNGEST_EVENT_KEY: z.string().min(5), 
     MODAL_KEY: z.string(),
     MODAL_SECRET: z.string(),
     AWS_ACCESS_KEY_ID: z.string(),
